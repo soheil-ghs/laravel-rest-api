@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "339c43c0-82e3-47f6-9e73-5928587ed821",
+		"name": "Laravel Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5306925"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWM1Y2MwYWRmNTQyYTdjNjAwZWM2YWJlZmIyYjhlMjY1YzNmOTA2ZmM3NDE5OTYyOTNlZjVlMzE1MDBkMmJlZTcyNGI0OGFlZDI0NTYwNDYiLCJpYXQiOjE2NTM4ODEwOTIuNjYxMjUyLCJuYmYiOjE2NTM4ODEwOTIuNjYxMjk0LCJleHAiOjE2ODU0MTcwOTIuNjMwODY4LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.DFhnQzbeZ5s7KSrTPQaW2dzz-lVgAVls7ZgyRDMyNqBmVGSg59qz-lTLGSyK6S-KIJf2KVi35sPIKJnLQvjOPMw0nRyFLw3lkKTPezRnVVvFcAklA_u7GwXcMthGJhhBdUveg61A87DxWT7KXNZFIzN_TTF_FoOMptR-ra6sqdxgiCfpZgww5lGJODnkTz4pPaH1AEuZlEzXZYRh0rW0yiU0craxstRcRjcEku_r7CuaxTykAv84mPpCWErY4ERtIDmYFvyS3HfLFEaxB5stpP8Vhf89zDGrpYNeQhUZlZYif_oYA40XqXbkMC6Xk-UljV5FwdyotnayEGR4oobLFeQaVNNR4n3WY9nJIvpRttAG6Dgv1KbAWzQ4b1xYWYLologjgwtzfF3FbAnfladtGP_JTkQI5WSjLrJArq3GRJJinrqn8pztUgFohup4VNI07TES8Ib1M82mFTV387MBIup2Zbajx1LxbrGeyORhRcP28NqcqVlXTs10mxLrjJsCvqYrGZQ-yMdaVEtDn1QUvlxZ8GureP9eSZa_wAKx61C2CL-XU-PNEP5XwkuMSK6MnD52-7g5iWQsPYuX0Q7vfAKtlJTA_tBE48n7fVIsJJIa1Dtdg_x1u9HJIWr5NwTwNf90VevAPsl_Fs8018ybiyK1bNK7tVXZlilzxdx1Lpw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/product/create?name=iPhone Promax&price=5000&description=گوشی موبایل آیفون",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"create"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "iPhone Promax"
+								},
+								{
+									"key": "price",
+									"value": "5000"
+								},
+								{
+									"key": "description",
+									"value": "گوشی موبایل آیفون"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWM1Y2MwYWRmNTQyYTdjNjAwZWM2YWJlZmIyYjhlMjY1YzNmOTA2ZmM3NDE5OTYyOTNlZjVlMzE1MDBkMmJlZTcyNGI0OGFlZDI0NTYwNDYiLCJpYXQiOjE2NTM4ODEwOTIuNjYxMjUyLCJuYmYiOjE2NTM4ODEwOTIuNjYxMjk0LCJleHAiOjE2ODU0MTcwOTIuNjMwODY4LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.DFhnQzbeZ5s7KSrTPQaW2dzz-lVgAVls7ZgyRDMyNqBmVGSg59qz-lTLGSyK6S-KIJf2KVi35sPIKJnLQvjOPMw0nRyFLw3lkKTPezRnVVvFcAklA_u7GwXcMthGJhhBdUveg61A87DxWT7KXNZFIzN_TTF_FoOMptR-ra6sqdxgiCfpZgww5lGJODnkTz4pPaH1AEuZlEzXZYRh0rW0yiU0craxstRcRjcEku_r7CuaxTykAv84mPpCWErY4ERtIDmYFvyS3HfLFEaxB5stpP8Vhf89zDGrpYNeQhUZlZYif_oYA40XqXbkMC6Xk-UljV5FwdyotnayEGR4oobLFeQaVNNR4n3WY9nJIvpRttAG6Dgv1KbAWzQ4b1xYWYLologjgwtzfF3FbAnfladtGP_JTkQI5WSjLrJArq3GRJJinrqn8pztUgFohup4VNI07TES8Ib1M82mFTV387MBIup2Zbajx1LxbrGeyORhRcP28NqcqVlXTs10mxLrjJsCvqYrGZQ-yMdaVEtDn1QUvlxZ8GureP9eSZa_wAKx61C2CL-XU-PNEP5XwkuMSK6MnD52-7g5iWQsPYuX0Q7vfAKtlJTA_tBE48n7fVIsJJIa1Dtdg_x1u9HJIWr5NwTwNf90VevAPsl_Fs8018ybiyK1bNK7tVXZlilzxdx1Lpw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/product/update?id=1&name=Galaxy S6&price=1500&description=گوشی سامسونگ",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "name",
+									"value": "Galaxy S6"
+								},
+								{
+									"key": "price",
+									"value": "1500"
+								},
+								{
+									"key": "description",
+									"value": "گوشی سامسونگ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWM1Y2MwYWRmNTQyYTdjNjAwZWM2YWJlZmIyYjhlMjY1YzNmOTA2ZmM3NDE5OTYyOTNlZjVlMzE1MDBkMmJlZTcyNGI0OGFlZDI0NTYwNDYiLCJpYXQiOjE2NTM4ODEwOTIuNjYxMjUyLCJuYmYiOjE2NTM4ODEwOTIuNjYxMjk0LCJleHAiOjE2ODU0MTcwOTIuNjMwODY4LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.DFhnQzbeZ5s7KSrTPQaW2dzz-lVgAVls7ZgyRDMyNqBmVGSg59qz-lTLGSyK6S-KIJf2KVi35sPIKJnLQvjOPMw0nRyFLw3lkKTPezRnVVvFcAklA_u7GwXcMthGJhhBdUveg61A87DxWT7KXNZFIzN_TTF_FoOMptR-ra6sqdxgiCfpZgww5lGJODnkTz4pPaH1AEuZlEzXZYRh0rW0yiU0craxstRcRjcEku_r7CuaxTykAv84mPpCWErY4ERtIDmYFvyS3HfLFEaxB5stpP8Vhf89zDGrpYNeQhUZlZYif_oYA40XqXbkMC6Xk-UljV5FwdyotnayEGR4oobLFeQaVNNR4n3WY9nJIvpRttAG6Dgv1KbAWzQ4b1xYWYLologjgwtzfF3FbAnfladtGP_JTkQI5WSjLrJArq3GRJJinrqn8pztUgFohup4VNI07TES8Ib1M82mFTV387MBIup2Zbajx1LxbrGeyORhRcP28NqcqVlXTs10mxLrjJsCvqYrGZQ-yMdaVEtDn1QUvlxZ8GureP9eSZa_wAKx61C2CL-XU-PNEP5XwkuMSK6MnD52-7g5iWQsPYuX0Q7vfAKtlJTA_tBE48n7fVIsJJIa1Dtdg_x1u9HJIWr5NwTwNf90VevAPsl_Fs8018ybiyK1bNK7tVXZlilzxdx1Lpw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/product/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWM1Y2MwYWRmNTQyYTdjNjAwZWM2YWJlZmIyYjhlMjY1YzNmOTA2ZmM3NDE5OTYyOTNlZjVlMzE1MDBkMmJlZTcyNGI0OGFlZDI0NTYwNDYiLCJpYXQiOjE2NTM4ODEwOTIuNjYxMjUyLCJuYmYiOjE2NTM4ODEwOTIuNjYxMjk0LCJleHAiOjE2ODU0MTcwOTIuNjMwODY4LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.DFhnQzbeZ5s7KSrTPQaW2dzz-lVgAVls7ZgyRDMyNqBmVGSg59qz-lTLGSyK6S-KIJf2KVi35sPIKJnLQvjOPMw0nRyFLw3lkKTPezRnVVvFcAklA_u7GwXcMthGJhhBdUveg61A87DxWT7KXNZFIzN_TTF_FoOMptR-ra6sqdxgiCfpZgww5lGJODnkTz4pPaH1AEuZlEzXZYRh0rW0yiU0craxstRcRjcEku_r7CuaxTykAv84mPpCWErY4ERtIDmYFvyS3HfLFEaxB5stpP8Vhf89zDGrpYNeQhUZlZYif_oYA40XqXbkMC6Xk-UljV5FwdyotnayEGR4oobLFeQaVNNR4n3WY9nJIvpRttAG6Dgv1KbAWzQ4b1xYWYLologjgwtzfF3FbAnfladtGP_JTkQI5WSjLrJArq3GRJJinrqn8pztUgFohup4VNI07TES8Ib1M82mFTV387MBIup2Zbajx1LxbrGeyORhRcP28NqcqVlXTs10mxLrjJsCvqYrGZQ-yMdaVEtDn1QUvlxZ8GureP9eSZa_wAKx61C2CL-XU-PNEP5XwkuMSK6MnD52-7g5iWQsPYuX0Q7vfAKtlJTA_tBE48n7fVIsJJIa1Dtdg_x1u9HJIWr5NwTwNf90VevAPsl_Fs8018ybiyK1bNK7tVXZlilzxdx1Lpw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/product/delete?id=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/register?email=soheil@gmail.com&name=soheil&password=12345678",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "soheil@gmail.com"
+						},
+						{
+							"key": "name",
+							"value": "soheil"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/login?email=soheil@gmail.com&password=12345678",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "soheil@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWM1Y2MwYWRmNTQyYTdjNjAwZWM2YWJlZmIyYjhlMjY1YzNmOTA2ZmM3NDE5OTYyOTNlZjVlMzE1MDBkMmJlZTcyNGI0OGFlZDI0NTYwNDYiLCJpYXQiOjE2NTM4ODEwOTIuNjYxMjUyLCJuYmYiOjE2NTM4ODEwOTIuNjYxMjk0LCJleHAiOjE2ODU0MTcwOTIuNjMwODY4LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.DFhnQzbeZ5s7KSrTPQaW2dzz-lVgAVls7ZgyRDMyNqBmVGSg59qz-lTLGSyK6S-KIJf2KVi35sPIKJnLQvjOPMw0nRyFLw3lkKTPezRnVVvFcAklA_u7GwXcMthGJhhBdUveg61A87DxWT7KXNZFIzN_TTF_FoOMptR-ra6sqdxgiCfpZgww5lGJODnkTz4pPaH1AEuZlEzXZYRh0rW0yiU0craxstRcRjcEku_r7CuaxTykAv84mPpCWErY4ERtIDmYFvyS3HfLFEaxB5stpP8Vhf89zDGrpYNeQhUZlZYif_oYA40XqXbkMC6Xk-UljV5FwdyotnayEGR4oobLFeQaVNNR4n3WY9nJIvpRttAG6Dgv1KbAWzQ4b1xYWYLologjgwtzfF3FbAnfladtGP_JTkQI5WSjLrJArq3GRJJinrqn8pztUgFohup4VNI07TES8Ib1M82mFTV387MBIup2Zbajx1LxbrGeyORhRcP28NqcqVlXTs10mxLrjJsCvqYrGZQ-yMdaVEtDn1QUvlxZ8GureP9eSZa_wAKx61C2CL-XU-PNEP5XwkuMSK6MnD52-7g5iWQsPYuX0Q7vfAKtlJTA_tBE48n7fVIsJJIa1Dtdg_x1u9HJIWr5NwTwNf90VevAPsl_Fs8018ybiyK1bNK7tVXZlilzxdx1Lpw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
